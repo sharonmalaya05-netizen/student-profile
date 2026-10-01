@@ -1,0 +1,131 @@
+/* =========================================================
+   1. Default Colors and Fonts
+   ========================================================= */
+body {
+    background-color: black;            /* Default Color */
+    color: rgb(255, 255, 255);          /* RGB Color for paragraph texts */
+    font-family: 'VT323', monospace;   /* Pixel Matrix/Hacker Font */
+    font-size: 20px;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* =========================================================
+   2. Basic Selectors (Element, Class, ID)
+   ========================================================= */
+
+/* Element Selector 1 */
+h1 {
+    color: #00FF00; /* Neon Hacker Green Main Theme */
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    text-shadow: 0 0 8px #00FF00;
+}
+
+/* Element Selector 2 */
+h2 {
+    color: #00FF00;
+    font-size: 2rem;
+    text-shadow: 0 0 5px #00FF00;
+}
+
+/* Class Selector 1 */
+.group-section {
+    margin-bottom: 40px;
+}
+
+.group-img {
+    width: 80%;
+    max-width: 600px;
+    border: 3px solid #00FF00;
+    border-radius: 8px;
+    box-shadow: 0 0 15px #00FF00;
+}
+
+/* Container Layout */
+.profiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Card Styling */
+.card {
+    background-color: rgb(15, 15, 15); /* Dark background container */
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    text-align: left;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card-info p {
+    margin: 6px 0;
+    color: rgb(255, 255, 255); /* White paragraph text requirement */
+}
+
+/* =========================================================
+   3. Individual Custom Color Themes
+   ========================================================= */
+
+/* Gertrude - Neon Pink */
+.gertrude {
+    border: 2px solid #FF1493;
+    box-shadow: 0 0 10px #FF1493;
+}
+.gertrude h3, .gertrude span {
+    color: #FF1493;
+}
+
+/* Maria - Red */
+.maria {
+    border: 2px solid #FF0000;
+    box-shadow: 0 0 10px #FF0000;
+}
+.maria h3, .maria span {
+    color: #FF0000;
+}
+
+/* Nathan - Darker Neon Blue */
+.nathan {
+    border: 2px solid #0055FF;
+    box-shadow: 0 0 10px #0055FF;
+}
+.nathan h3, .nathan span {
+    color: #0055FF;
+}
+
+/* Brent - Neon Blue */
+.brent {
+    border: 2px solid #00E5FF;
+    box-shadow: 0 0 10px #00E5FF;
+}
+.brent h3, .brent span {
+    color: #00E5FF;
+}
+
+/* =========================================================
+   4. Combinator Selector (Requirement fulfilled)
+   ========================================================= */
+/* Descendant Combinator Selector */
+footer p {
+    color: rgb(0, 255, 0); /* Green hacker footer text */
+    margin-top: 40px;
+    font-size: 1.2rem;
+}
+
+
